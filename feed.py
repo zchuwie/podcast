@@ -31,7 +31,7 @@ for item in yaml_data['item']:
     xml_tree.SubElement(item_element, 'itunes:author').text = yaml_data['author']
     xml_tree.SubElement(item_element, 'description').text = item['description']
     xml_tree.SubElement(item_element, 'pub').text = item['published']
-    xml_tree.SubElement(item_element, 'itune:duration').text = item['duration']
+    xml_tree.SubElement(item_element, 'itunes:duration').text = item['duration']
     xml_tree.SubElement(item_element, 'title').text = item['title']
 
     enclosure = xml_tree.SubElement(item_element, 'enclosure', {
