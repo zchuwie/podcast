@@ -2,7 +2,7 @@ name: Generate Podcast
 on: [push]
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
